@@ -34,6 +34,14 @@ form {
   width: 60%;
 }
 
+#poem {
+  background-color: white;
+  border-left: 3px solid #a64452;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+
 #submit-button {
   background-color: #f7c873;
   border: 1px solid #f7c873;

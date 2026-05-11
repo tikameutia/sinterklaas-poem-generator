@@ -3,11 +3,28 @@ body {
   font-family: "Source Code Pro", monospace;
 }
 
-h1,
-h2 {
+h1 {
   color: #a64452;
   font-family: "Source Sans 3", sans-serif;
   text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #a64452;
+  font-family: "Source Sans 3", sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+
+a {
+  color: #a64452;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  font-weight: 600;
 }
 
 form {
@@ -19,8 +36,14 @@ form {
   text-align: center;
 }
 
+footer {
+  color: #434343;
+  font-family: "Source Sans 3", sans-serif;
+  text-align: center;
+}
+
 .container {
-  margin: 120px auto;
+  margin: 80px auto;
   max-width: 60%;
 }
 
@@ -38,17 +61,25 @@ form {
   background-color: white;
   border-left: 3px solid #a64452;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #434343;
   margin-bottom: 30px;
   padding: 30px;
 }
 
 #submit-button {
-  background-color: #f7c873;
-  border: 1px solid #f7c873;
+  background-color: #a64452;
+  border: 1px solid #a64452;
   border-radius: 20px;
-  color: #434343;
+  color: white;
   font-family: "Source Sans 3", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   padding: 10px;
+  transition: all 150ms ease-in-out;
+}
+
+#submit-button:hover {
+  background-color: white;
+  color: #a64452;
+  cursor: pointer;
 }

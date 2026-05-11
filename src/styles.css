@@ -47,6 +47,14 @@ footer {
   max-width: 60%;
 }
 
+.note {
+  color: #434343;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
 #present {
   border-radius: 30px;
   color: #434343;

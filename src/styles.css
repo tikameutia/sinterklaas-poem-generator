@@ -7,8 +7,40 @@ h1,
 h2 {
   color: #a64452;
   font-family: "Source Sans 3", sans-serif;
+  text-align: center;
+}
+
+form {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 30px;
+  padding: 30px;
+  text-align: center;
 }
 
 .container {
-  margin: 120px;
+  margin: 120px auto;
+  max-width: 60%;
+}
+
+#present {
+  border-radius: 30px;
+  color: #434343;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px;
+  width: 60%;
+}
+
+#submit-button {
+  background-color: #f7c873;
+  border: 1px solid #f7c873;
+  border-radius: 20px;
+  color: #434343;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px;
 }

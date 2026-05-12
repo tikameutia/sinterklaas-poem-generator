@@ -19,7 +19,7 @@ function generatePoem(event) {
 
   let poemContainer = document.querySelector(".poem-container");
   poemContainer.classList.remove("hidden");
-  poem.innerHTML = "Generating a Sinterklaas poem for you.. please wait ⏳";
+  poem.innerHTML = `<div class = "waiting">Generating a Sinterklaas poem for you.. please wait ⏳</div>`;
 
   axios.get(apiUrl).then(showPoem);
 }

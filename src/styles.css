@@ -76,6 +76,16 @@ footer {
   margin-top: 10px;
 }
 
+.waiting {
+  animation: blinker 1500ms linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 #present {
   border-radius: 30px;
   color: #434343;

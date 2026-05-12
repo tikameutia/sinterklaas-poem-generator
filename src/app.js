@@ -1,10 +1,6 @@
 function showPoem(response) {
-  let poem = document.querySelector("#poem");
-  poem.innerHTML =
-    "Sint weet uit het verleden, Jij bent altijd snel tevreden. Daarom dit pakje, klein maar fijn. Daar zul je vast wel blij mee zijn.";
-
   new Typewriter("#poem", {
-    strings: poem.innerHTML,
+    strings: response.data.answer,
     autoStart: true,
     cursor: null,
     delay: 10,
@@ -14,9 +10,11 @@ function showPoem(response) {
 function generatePoem(event) {
   event.preventDefault();
 
+  let present = document.querySelector("#present");
+
   let apiKey = "0050t012172bb4a92f6b53332o6cb5f4";
-  let prompt = "";
-  let context = "";
+  let prompt = `Please make a short and funny Sinterklaas poem in Dutch, the present is ${present.value}`;
+  let context = `You are a witty, smart and funny Sinterklaas poem maker. The poem that you created will be beautifully rhymed and short. Please provide your poem with a proper <br /> element use so we can read the rhyme better. The Dutch translation word of the ${present.value} to be written with <strong> element. End the poem with a signature 'Liefs, Sint en Piet'.`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiUrl).then(showPoem);

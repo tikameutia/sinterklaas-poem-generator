@@ -60,9 +60,7 @@ footer {
   gap: 30px;
   justify-content: flex-start;
   margin-bottom: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
+  padding: 10px;
 }
 
 .note {
@@ -81,6 +79,10 @@ footer {
   line-height: 1.5;
   padding: 10px;
   width: 60%;
+}
+
+#poem strong {
+  color: #a64452;
 }
 
 #submit-button {
